@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css';
+import NavBar from './components/NavBar.js'
+import Banner from './components/Banner.js';
+
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 
 class App extends Component {
   constructor(props) {
@@ -25,12 +34,13 @@ class App extends Component {
 
   render() {
     return (
+      <BrowserRouter>
+      
       <div className="App">
-        <h1>{ this.state.message }</h1>
-        <button onClick={this.fetchData} >
-          Fetch Data
-        </button>        
+        <Banner/>
+        <NavBar/>
       </div>
+      </BrowserRouter>
     );
   }
 }

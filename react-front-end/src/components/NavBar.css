@@ -1,0 +1,19 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%; /* Span the entire width */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align links to the right */
+  }
+  
+  .nav-link {
+    padding: 0.5rem 1rem;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav-link:hover {
+    color: #555;
+  }
+  
