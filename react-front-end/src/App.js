@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css';
+import './fonts.css';
 import NavBar from './components/NavBar.js'
 import Banner from './components/Banner.js';
 
@@ -38,7 +39,9 @@ class App extends Component {
       
       <div className="App">
         <Banner/>
-        <NavBar/>
+       <NavBar/>
+      
+       
       </div>
       </BrowserRouter>
     );

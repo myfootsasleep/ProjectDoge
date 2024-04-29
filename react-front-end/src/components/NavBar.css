@@ -1,19 +1,26 @@
+
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%; /* Span the entire width */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end; /* Align links to the right */
-  }
-  
-  .nav-link {
-    padding: 0.5rem 1rem;
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .nav-link:hover {
-    color: #555;
-  }
-  
+  position: fixed; /* Change to fixed to keep it visible while scrolling */
+  top: -700px;
+  right: 0; /* Position it on the right side of the page */
+  /* Remove width to allow it to grow vertically */
+  height: 100vh; /* Make it full height of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align links to the top */
+  background-color: aqua;
+  margin-left: 90%;
+  z-index: 1000; /* Ensure it stays on top of other content */
+  border-radius: 10px;
+}
+
+.nav-link {
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Yellowtail';
+}
+
+.nav-link:hover {
+  color: #555;
+}
